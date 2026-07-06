@@ -1,42 +1,76 @@
-# 🌿 Welcome to 4iren (4팀)
+<div align="center">
+  <br/>
+  <img src="image/img.png" alt="4iren Siren Icon" width="150"/> 
 
-> **공간 융합형 데이터 기반 AIoT 지능형 강의실 환경 제어 플랫폼**
-> 10주간 함께 만들어가는 인공지능 기반 환경 관리 솔루션
+  <h1>🚨 4iren (4팀)</h1>
+  <p><b>공간 융합형 데이터 기반 AIoT 지능형 강의실 환경 제어 플랫폼</b></p>
+  <p>10주간 함께 만들어가는 인공지능 기반 환경 관리 솔루션 프로젝트입니다.</p>
 
-## 📌 Project Overview
-교육 시설마다 다른 강의실의 구조적 특성(크기, 창문, 단열 등)과 유동적인 재실 상태를 반영하여, 기존의 일률적인 환경 제어(Rule-based) 규칙이 가진 한계를 혁신합니다.
+  <br/>
 
-외부 날씨 API와 실내 환경 센서(온·습도, 기압, CO2, 도어) 데이터를 융합해 LLM이 맥락 인지형 제어 가이드를 제공합니다. 또한, 공간별 하드웨어 특성과 사용자 집단의 행동 패턴을 머신러닝(ML)으로 학습하여 별도의 초기 세팅 없이 플러그앤플레이(Plug & Play) 형태로 즉시 도입 가능한 상용 AIoT 솔루션을 구축하는 것을 목표로 합니다.
+<a href="">🖥️ 홈페이지</a> &nbsp; | &nbsp; <a href="">📄 WIKI</a> &nbsp; | &nbsp; <a href="">📚 Swagger</a>
 
-## 🚀 Key Features
-* **LLM 컨텍스트 인식 & 웰컴 브리핑:** 매일 아침 도어 센서 첫 개방 시, 당일 날씨와 실내 공기질을 종합하여 직관적인 웰컴 브리핑 텍스트 알림 및 자연어 기반 제어 가이드 제공.
-* **멀티모달 시계열 기반 정밀 재실 분석 & 대시보드:** 도어 센서 이벤트와 CO2 농도의 기울기(Gradient)를 분석해 빈 공간을 정밀하게 구분하여 에너지 관리(BEMS) 자동화 및 관리자용 모니터링 대시보드 지원.
-* **공간 도메인 적응 & 집단 맞춤형 학습 (ML):** 각 강의실의 물리적 고유 특성과 사용자 피드백을 누적 학습하여 스스로 최적의 쾌적 지표를 도출하고, 이를 룰 엔진과 연동해 자동 대응.
-* **Fault Tolerance (센서 이상 탐지):** 통계적 알고리즘을 통해 센서 노이즈나 고정 에러(Stuck) 등을 실시간으로 필터링하여 시스템 오작동 방지.
-* **안정적인 아키텍처 및 파이프라인:** JWT 기반 인증 체계와 MSA 구조를 도입하고, TSDB와 RDB를 병행하여 대용량 센서 데이터를 안정적으로 수집/가공하는 파이프라인 구축.
+  <br/>
+  <br/>
 
-## 👨‍💻 Team Members
+  <h3> 🔥 Team 4 Members (9명)</h3>
 
-| 이름 | 포지션 / 역할 |                       GitHub                       |
-| :---: | :---: |:--------------------------------------------------:|
-| **김태희** | Frontend / 대시보드 UI 구현 |         [@pp0ng](https://github.com/pp0ng)         |
-| **신준식** | AI / 머신러닝 공간 도메인 학습 |    [@shinjunsik](https://github.com/shinjunsik)    |
-| **윤채영** | Backend / JWT 인증 및 사용자 관리 |     [@yooncy123](https://github.com/yooncy123)     |
-| **유대연** | IoT / 센서 연동 및 이상 탐지 알고리즘 |        [@Uoo-uu](https://github.com/Uoo-uu)        |
-| **이정민** | Data / TSDB+RDB 병행 설계 및 데이터 가공 |    [@jeongmin26](https://github.com/jeongmin26)    |
-| **전유진** | Backend / Spring Boot 기반 MSA 설계 및 통합 |        [@onyune](https://github.com/onyune)        |
-| **최이건** | AI / LLM 연동 및 프롬프트 처리 모듈 | [@likeironbasic](https://github.com/likeironbasic) |
-| **황지원** | Infra / CI·CD 및 고가용성 아키텍처 배포 |     [@hjiwon203](https://github.com/hjiwon203)     |
-| **전재나** | Data / RabbitMQ 룰 엔진 및 메시지 브로커 |      [@JAENA216](https://github.com/JAENA216)      |
+  <table>
+    <tr>
+      <td align="center"><a href="https://github.com/pp0ng"><img src="https://github.com/pp0ng.png" width="100px"><br/>김태희</a><br/><sub>Frontend</sub></td>
+      <td align="center"><a href="https://github.com/shinjunsik"><img src="https://github.com/shinjunsik.png" width="100px"><br/>신준식</a><br/><sub>AI / ML</sub></td>
+      <td align="center"><a href="https://github.com/yooncy123"><img src="https://github.com/yooncy123.png" width="100px"><br/>윤채영</a><br/><sub>Backend</sub></td>
+      <td align="center"><a href="https://github.com/Uoo-uu"><img src="https://github.com/Uoo-uu.png" width="100px"><br/>유대연</a><br/><sub>IoT / Sensor</sub></td>
+      <td align="center"><a href="https://github.com/jeongmin26"><img src="https://github.com/jeongmin26.png" width="100px"><br/>이정민</a><br/><sub>Data Arch</sub></td>
+    </tr>
+  </table>
 
-## 🛠️ Architecture & Tech Stack
-* **Backend:** Spring Boot 기반 MSA(마이크로서비스 아키텍처)
-* **Message Broker:** RabbitMQ / Kafka (센서 데이터 비동기 수집)
-* **Data & AI:** Elasticsearch (시계열 검색), TSDB + RDB 병행 아키텍처
-* **Infra:** 이중화 기반 무중단 고가용성 구조
+  <table>
+    <tr>
+      <td align="center"><a href="https://github.com/onyune"><img src="https://github.com/onyune.png" width="100px"><br/>전유진</a><br/><sub>BE / MSA</sub></td>
+      <td align="center"><a href="https://github.com/likeironbasic"><img src="https://github.com/likeironbasic.png" width="100px"><br/>최이건</a><br/><sub>AI / LLM</sub></td>
+      <td align="center"><a href="https://github.com/hjiwon203"><img src="https://github.com/hjiwon203.png" width="100px"><br/>황지원</a><br/><sub>Infra / CI·CD</sub></td>
+      <td align="center"><a href="https://github.com/JAENA216"><img src="https://github.com/JAENA216.png" width="100px"><br/>전재나</a><br/><sub>Data Pipeline</sub></td>
+    </tr>
+  </table>
+</div>
 
-## 🤝 Ground Rules
-* **일일 미팅:** 매일 오전 9시 (어제 한 일, 오늘 할 일, 이슈 공유)
-* **일일 커밋:** 매일 오후, 진행 상황을 알 수 있도록 명확한 커밋 메시지와 함께 PUSH
-* **주간 미팅:** 주 1회 멘토 점검 및 주간 스프린트 회고
-* **상호 평가:** 프로젝트 초, 중, 후반 총 3회에 걸쳐 팀원 상호 피드백 진행
+<br/>
+
+---
+
+## 🛠️ Tech Stack
+<div align="center">
+  <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white">
+  <img src="https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white">
+  <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+</div>
+
+---
+
+## 📂 Repositories 추후 다시 업데이트
+
+- [🌿 4iren-Gateway](https://github.com/4iren/gateway-service) - 시스템 관문 및 인증 처리
+- [📡 4iren-Sensor-Service](https://github.com/4iren/sensor-service) - IoT 센서 데이터 수집 및 이상 탐지
+- [🧠 4iren-AI-Service](https://github.com/4iren/ai-service) - LLM 가이드 및 ML 공간 학습 로직
+- [📊 4iren-Dashboard-Web](https://github.com/4iren/dashboard-web) - 실시간 환경 모니터링 UI
+- [⚙️ 4iren-Control-Service](https://github.com/4iren/control-service) - 기기 제어 및 룰 엔진
+
+<br/>
+
+---
+
+## 📅 Project Info
+
+**프로젝트 기간 : 10주 (2026.07.06 ~ 2026.09.22)**
+
+<div align="left">
+  <ul>
+    <li><b>1~2주차:</b> 기획 및 MSA 아키텍처 설계</li>
+    <li><b>3~9주차:</b> 기능 구현, 데이터 파이프라인 통합 및 AI 모델 고도화</li>
+    <li><b>10주차:</b> 통합 테스트, 시스템 이중화 검증 및 최종 발표</li>
+  </ul>
+</div>
