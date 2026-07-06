@@ -1,0 +1,36 @@
+name: 📝 Task
+description: 일반적인 개발 작업 및 단위 업무를 등록합니다.
+title: "[TASK] "
+labels: ["task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📝 개발 작업 내역
+        담당할 작업의 목표와 세부 구현 사항을 작성해 주세요.
+  - type: textarea
+    id: goal
+    attributes:
+      label: 작업 목표
+      description: 이 Task를 통해 달성하고자 하는 결과물이 무엇인가요?
+      placeholder: ex) Spring Boot 프로젝트 초기 세팅 및 의존성 추가
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: 세부 작업 목록 (To-Do)
+      description: 진행할 작업을 체크리스트로 쪼개어 적어주세요.
+      placeholder: |
+        - [ ] Spring Boot Web, JPA, Security 의존성 추가
+        - [ ] application.yml 환경변수 세팅
+        - [ ] MSA 기반 패키지 구조 뼈대 잡기
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: 참고 자료 (선택)
+      description: 작업 시 참고할 API 명세서, 기획서, 또는 외부 링크가 있다면 적어주세요.
+    validations:
+      required: false
