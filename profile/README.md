@@ -1,6 +1,6 @@
 <div align="center">
   <br/>
-  <img src="image/img.png" alt="4iren Siren Icon" width="150"/> 
+  <img src="img.png" alt="4iren Siren Icon" width="150"/> 
 
   <h1>🚨 4iren (4팀)</h1>
   <p><b>공간 융합형 데이터 기반 AIoT 지능형 강의실 환경 제어 플랫폼</b></p>
