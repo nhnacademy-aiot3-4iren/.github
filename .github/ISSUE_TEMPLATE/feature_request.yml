@@ -1,6 +1,6 @@
 name: ✨ Feature Request
 description: 프로젝트에 추가할 새로운 기능을 제안합니다.
-title: "[FEATURE] "
+title: "[Feature] "
 labels: ["enhancement"]
 body:
   - type: markdown

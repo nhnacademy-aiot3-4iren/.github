@@ -1,6 +1,6 @@
 name: ❓ Question & Discussion
 description: 아키텍처, 기술 스택, 또는 개발 방향에 대해 팀원들과 논의합니다.
-title: "[QUESTION] "
+title: "[Question] "
 labels: ["question"]
 body:
   - type: markdown
