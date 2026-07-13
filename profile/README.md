@@ -19,15 +19,15 @@
     <tr>
       <td align="center"><a href="https://github.com/pp0ng"><img src="https://github.com/pp0ng.png" width="100px"><br/>김태희</a><br/><sub>Rule Engine</sub></td>
       <td align="center"><a href="https://github.com/shinjunsik"><img src="https://github.com/shinjunsik.png" width="100px"><br/>신준식</a><br/><sub>Infra / CI·CD</sub></td>
-      <td align="center"><a href="https://github.com/yooncy123"><img src="https://github.com/yooncy123.png" width="100px"><br/>윤채영</a><br/><sub>Recommendation / Environment</sub></td>
-      <td align="center"><a href="https://github.com/Uoo-uu"><img src="https://github.com/Uoo-uu.png" width="100px"><br/>유대연</a><br/><sub>Recommendation / Environment</sub></td>
+      <td align="center"><a href="https://github.com/yooncy123"><img src="https://github.com/yooncy123.png" width="100px"><br/>윤채영</a><br/><sub>Recommendation / Core</sub></td>
+      <td align="center"><a href="https://github.com/Uoo-uu"><img src="https://github.com/Uoo-uu.png" width="100px"><br/>유대연</a><br/><sub>Recommendation / Core</sub></td>
       <td align="center"><a href="https://github.com/jeongmin26"><img src="https://github.com/jeongmin26.png" width="100px"><br/>이정민</a><br/><sub>Auth / Account</sub></td>
     </tr>
   </table>
 
   <table>
     <tr>
-      <td align="center"><a href="https://github.com/onyune"><img src="https://github.com/onyune.png" width="100px"><br/>전유진</a><br/><sub>AI Predict / Alert</sub></td>
+      <td align="center"><a href="https://github.com/onyune"><img src="https://github.com/onyune.png" width="100px"><br/>전유진</a><br/><sub>AI Predict / Notification</sub></td>
       <td align="center"><a href="https://github.com/likeironbasic"><img src="https://github.com/likeironbasic.png" width="100px"><br/>최이건</a><br/><sub>AI Learning</sub></td>
       <td align="center"><a href="https://github.com/hjiwon203"><img src="https://github.com/hjiwon203.png" width="100px"><br/>황지원</a><br/><sub>Rule Engine</sub></td>
       <td align="center"><a href="https://github.com/JAENA216"><img src="https://github.com/JAENA216.png" width="100px"><br/>전재나</a><br/><sub>Front / Auth</sub></td>
