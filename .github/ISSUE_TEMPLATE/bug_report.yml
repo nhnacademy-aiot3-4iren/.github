@@ -1,49 +1,18 @@
-name: 🐛 Bug Report
-description: 시스템에 발생한 버그나 에러를 제보합니다.
-title: "[Bug] "
+name: "🐛 Bug"
+description: "버그 제보"
 labels: ["bug"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ## 🐛 버그 리포트
-        이슈를 남겨주셔서 감사합니다. 아래 항목을 최대한 자세히 작성해 주세요!
   - type: textarea
-    id: description
     attributes:
-      label: 버그 설명
-      description: 어떤 버그가 발생했는지 명확하고 간결하게 설명해 주세요.
+      label: 📄 설명
+      description: 어떤 버그가 발생했는지 설명해 주세요.
+      placeholder: 자세히 적을수록 좋습니다!
     validations:
       required: true
   - type: textarea
-    id: reproduction
     attributes:
-      label: 재현 방법
-      description: 버그를 어떻게 재현할 수 있는지 단계별로 적어주세요.
-      placeholder: |
-        1. '...' 페이지로 이동
-        2. '...' 버튼 클릭
-        3. '...' 데이터 입력 시 에러 발생
+      label: ✅ 작업할 내용
+      description: 할 일을 체크박스 형태로 작성해주세요.
+      placeholder: 최대한 세분화 해서 적어주세요!
     validations:
       required: true
-  - type: textarea
-    id: expected
-    attributes:
-      label: 예상되는 정상적인 동작
-      description: 원래는 어떻게 작동해야 하는지 적어주세요.
-    validations:
-      required: true
-  - type: textarea
-    id: environment
-    attributes:
-      label: 개발 환경
-      description: 에러가 발생한 브랜치나 개발 환경을 적어주세요. (OS, 브라우저, 로컬/서버 여부 등)
-    validations:
-      required: false
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: 스크린샷 또는 에러 로그
-      description: 확인에 도움이 되는 스크린샷이나 서버 에러 로그를 첨부해 주세요.
-    validations:
-      required: false

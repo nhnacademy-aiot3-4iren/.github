@@ -1,32 +1,18 @@
-name: ❓ Question & Discussion
-description: 아키텍처, 기술 스택, 또는 개발 방향에 대해 팀원들과 논의합니다.
-title: "[Question] "
+name: "❓ Question"
+description: "질문 및 논의"
 labels: ["question"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ## ❓ 질문 및 논의
-        자유롭게 질문하고 의견을 나누는 공간입니다.
   - type: textarea
-    id: topic
     attributes:
-      label: 논의 주제
-      description: 어떤 부분에 대해 논의하고 싶은지 설명해 주세요.
+      label: 📄 설명
+      description: 논의하고 싶은 주제와 현재 상황을 설명해 주세요.
+      placeholder: 자세히 적을수록 좋습니다!
     validations:
       required: true
   - type: textarea
-    id: context
     attributes:
-      label: 현재 상황 및 고민 (Context)
-      description: 왜 이 논의가 필요한지, 현재 알아본 바는 무엇인지 적어주세요.
-      placeholder: ex) 센서 데이터를 수집할 때 RabbitMQ와 Kafka 중 어떤 것이 우리 아키텍처에 더 맞을지 의견이 필요합니다.
-    validations:
-      required: true
-  - type: textarea
-    id: suggestion
-    attributes:
-      label: 개인적인 제안 (선택)
-      description: 본인이 생각하는 해결책이나 방향성이 있다면 적어주세요.
+      label: ✅ 작업할 내용
+      description: 논의 후 정리할 액션 아이템을 체크박스 형태로 작성해주세요.
+      placeholder: 최대한 세분화 해서 적어주세요!
     validations:
       required: false

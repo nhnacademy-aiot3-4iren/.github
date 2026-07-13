@@ -1,41 +1,18 @@
-name: ✨ Feature Request
-description: 프로젝트에 추가할 새로운 기능을 제안합니다.
-title: "[Feature] "
-labels: ["enhancement"]
+name: "✨ Feature"
+description: "새로운 기능 추가"
+labels: ["feature"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ## ✨ 신규 기능 제안
-        새로운 기능이나 개선 사항을 제안해 주세요.
   - type: textarea
-    id: problem
     attributes:
-      label: 배경 및 필요성
-      description: 왜 이 기능이 필요한가요? 해결하고자 하는 문제나 불편한 점을 적어주세요.
+      label: 📄 설명
+      description: 새로운 기능에 대한 설명을 작성해 주세요.
+      placeholder: 자세히 적을수록 좋습니다!
     validations:
       required: true
   - type: textarea
-    id: solution
     attributes:
-      label: 기능 상세 설명
-      description: 추가하고 싶은 기능이 어떻게 작동해야 하는지 자세히 적어주세요.
-      placeholder: |
-        - [ ] 기능 1 세부사항
-        - [ ] 기능 2 세부사항
+      label: ✅ 작업할 내용
+      description: 할 일을 체크박스 형태로 작성해주세요.
+      placeholder: 최대한 세분화 해서 적어주세요!
     validations:
       required: true
-  - type: textarea
-    id: alternatives
-    attributes:
-      label: 대안
-      description: 이 기능 외에 고려해 본 다른 방법이 있다면 적어주세요.
-    validations:
-      required: false
-  - type: input
-    id: deadline
-    attributes:
-      label: 예상 소요 기간 (선택)
-      description: 이 기능을 구현하는 데 어느 정도의 시간이 걸릴지 적어주세요.
-    validations:
-      required: false
