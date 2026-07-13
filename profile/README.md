@@ -75,20 +75,60 @@
 
 ---
 
-## 📂 Repositories 추후 다시 업데이트
+## 📂 Repositories
+<p align="center"><i>⚠️ 추후 다시 업데이트 예정입니다.</i></p>
 
-- [4iren-gateway](https://github.com/nhnacademy-aiot3-4iren/4iren-gateway) - 게이트웨이
-- [4iren-eureka](https://github.com/nhnacademy-aiot3-4iren/4iren-eureka) - 유레카
-- [4iren-front](https://github.com/nhnacademy-aiot3-4iren/4iren-front-server) - 프론트
-- [4iren-rule-engine](https://github.com/nhnacademy-aiot3-4iren/4iren-rule-engine) - 룰 엔진
-- [4iren-processing](https://github.com/nhnacademy-aiot3-4iren/4iren-processing) - 데이터 전처리
-- [4iren-core](https://github.com/nhnacademy-aiot3-4iren/4iren-core-api)  - 핵심 비즈니스
-- [4iren-recommendation](https://github.com/nhnacademy-aiot3-4iren/4iren-recommendation-api) - LLM 처리
-- [4iren-auth](https://github.com/nhnacademy-aiot3-4iren/4iren-auth-api) - 인증/인가
-- [4iren-account](https://github.com/nhnacademy-aiot3-4iren/4iren-auth-api) - 업데이트예정
-- [4iren-notification](https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service) - 알림(텔레그램) 처리
-- [4iren-AI-learning](https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service) - 업데이트 예정
-- [4iren-AI-predict](https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service) - 업데이트 예정
+<div align="center">
+
+<h3>🌐 Gateway & Infra</h3>
+
+<table align="center">
+  <tr><th align="center">Repository</th><th align="center">설명</th></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-gateway">4iren-gateway</a></td><td align="center">게이트웨이</td></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-eureka">4iren-eureka</a></td><td align="center">유레카</td></tr>
+</table>
+
+<h3>🖥️ Front</h3>
+
+<table align="center">
+  <tr><th align="center">Repository</th><th align="center">설명</th></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-front-server">4iren-front</a></td><td align="center">프론트</td></tr>
+</table>
+
+<h3>⚙️ Core Services</h3>
+
+<table align="center">
+  <tr><th align="center">Repository</th><th align="center">설명</th></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-rule-engine">4iren-rule-engine</a></td><td align="center">룰 엔진</td></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-processing">4iren-processing</a></td><td align="center">데이터 전처리</td></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-core-api">4iren-core</a></td><td align="center">핵심 비즈니스</td></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-recommendation-api">4iren-recommendation</a></td><td align="center">LLM 처리</td></tr>
+</table>
+
+<h3>🔐 Auth & Account</h3>
+
+<table align="center">
+  <tr><th align="center">Repository</th><th align="center">설명</th></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-auth-api">4iren-auth</a></td><td align="center">인증/인가</td></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-auth-api">4iren-account</a></td><td align="center">업데이트 예정</td></tr>
+</table>
+
+<h3>🔔 Notification</h3>
+
+<table align="center">
+  <tr><th align="center">Repository</th><th align="center">설명</th></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service">4iren-notification</a></td><td align="center">알림(텔레그램) 처리</td></tr>
+</table>
+
+<h3>🤖 AI</h3>
+
+<table align="center">
+  <tr><th align="center">Repository</th><th align="center">설명</th></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service">4iren-AI-learning</a></td><td align="center">업데이트 예정</td></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service">4iren-AI-predict</a></td><td align="center">업데이트 예정</td></tr>
+</table>
+
+</div>
 
 <br/>
 
