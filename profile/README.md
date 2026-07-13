@@ -77,11 +77,18 @@
 
 ## 📂 Repositories 추후 다시 업데이트
 
-- [🌿 4iren-Gateway](https://github.com/4iren/gateway-service) - 시스템 관문 및 인증 처리
-- [📡 4iren-Sensor-Service](https://github.com/4iren/sensor-service) - IoT 센서 데이터 수집 및 이상 탐지
-- [🧠 4iren-AI-Service](https://github.com/4iren/ai-service) - LLM 가이드 및 ML 공간 학습 로직
-- [📊 4iren-Dashboard-Web](https://github.com/4iren/dashboard-web) - 실시간 환경 모니터링 UI
-- [⚙️ 4iren-Control-Service](https://github.com/4iren/control-service) - 기기 제어 및 룰 엔진
+- [4iren-gateway](https://github.com/nhnacademy-aiot3-4iren/4iren-gateway) - 게이트웨이
+- [4iren-eureka](https://github.com/nhnacademy-aiot3-4iren/4iren-eureka) - 유레카
+- [4iren-front](https://github.com/nhnacademy-aiot3-4iren/4iren-front-server) - 프론트
+- [4iren-rule-engine](https://github.com/nhnacademy-aiot3-4iren/4iren-rule-engine) - 룰 엔진
+- [4iren-processing](https://github.com/nhnacademy-aiot3-4iren/4iren-processing) - 데이터 전처리
+- [4iren-core](https://github.com/nhnacademy-aiot3-4iren/4iren-core-api)  - 핵심 비즈니스
+- [4iren-recommendation](https://github.com/nhnacademy-aiot3-4iren/4iren-recommendation-api) - LLM 처리
+- [4iren-auth](https://github.com/nhnacademy-aiot3-4iren/4iren-auth-api) - 인증/인가
+- [4iren-account](https://github.com/nhnacademy-aiot3-4iren/4iren-auth-api) - 업데이트예정
+- [4iren-notification](https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service) - 알림(텔레그램) 처리
+- [4iren-AI-learning](https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service) - 업데이트 예정
+- [4iren-AI-predict](https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service) - 업데이트 예정
 
 <br/>
 
