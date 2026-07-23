@@ -98,34 +98,38 @@
 <h3>⚙️ Core Services</h3>
 
 <table align="center">
-  <tr><th align="center">Repository</th><th align="center">설명</th></tr>
-  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-rule-engine">4iren-rule-engine</a></td><td align="center">룰 엔진</td></tr>
-  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-processing">4iren-processing</a></td><td align="center">데이터 전처리</td></tr>
-  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-core-api">4iren-core</a></td><td align="center">핵심 비즈니스</td></tr>
-  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-recommendation-api">4iren-recommendation</a></td><td align="center">LLM 처리</td></tr>
+  <tr>
+    <th align="center">Repository</th>
+    <th align="center">설명</th>
+    <th>세부기능</th>
+  </tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-rule-engine">4iren-rule-engine</a></td><td align="center">룰 엔진</td><td><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/Rule%E2%80%90engine-%E2%80%90%EC%84%B8%EB%B6%80%EA%B8%B0%EB%8A%A5">Rule Engine 세부기능</a></td></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-processing">4iren-processing</a></td><td align="center">데이터 전처리</td><td><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/%EC%84%BC%EC%84%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A7%91-%EB%B0%8F-%EC%A0%84%EC%B2%98%EB%A6%AC-%EC%84%9C%EB%B9%84%EC%8A%A4-(Processing-Service)">Processing 세부기능</a></td></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-core-api">4iren-core</a></td><td align="center">핵심 비즈니스</td><td><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/Core-%E2%80%90-%EC%84%B8%EB%B6%80%EA%B8%B0%EB%8A%A5">Core 세부기능</a></td></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-recommendation-api">4iren-recommendation</a></td><td align="center">LLM 처리</td><td><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/Recommendation-%E2%80%90-%EC%84%B8%EB%B6%80%EA%B8%B0%EB%8A%A5">Recommendation 세부기능</a></td></tr>
 </table>
 
 <h3>🔐 Auth & Account</h3>
 
 <table align="center">
-  <tr><th align="center">Repository</th><th align="center">설명</th></tr>
-  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-auth-api">4iren-auth</a></td><td align="center">인증/인가</td></tr>
-  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-auth-api">4iren-account</a></td><td align="center">업데이트 예정</td></tr>
+  <tr><th align="center">Repository</th><th align="center">설명</th><th>세부기능</th></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-auth-api">4iren-auth</a></td><td align="center">인증/인가</td><td><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/Auth-%E2%80%90-%EC%84%B8%EB%B6%80%EA%B8%B0%EB%8A%A5">Auth 세부기능</a></td></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-account-api">4iren-account</a></td><td align="center">유저 CRUD</td><td><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/Account-%E2%80%90-%EC%84%B8%EB%B6%80%EA%B8%B0%EB%8A%A5">Account 세부기능</a></td></tr>
 </table>
 
 <h3>🔔 Notification</h3>
 
 <table align="center">
-  <tr><th align="center">Repository</th><th align="center">설명</th></tr>
-  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service">4iren-notification</a></td><td align="center">알림(텔레그램) 처리</td></tr>
+  <tr><th align="center">Repository</th><th align="center">설명</th><th>세부기능</th></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service">4iren-notification</a></td><td align="center">알림(텔레그램) 처리</td><td><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/Notification-API-%E2%80%90-%EC%84%B8%EB%B6%80%EA%B8%B0%EB%8A%A5">Notification 세부기능</a></td></tr>
 </table>
 
 <h3>🤖 AI</h3>
 
 <table align="center">
-  <tr><th align="center">Repository</th><th align="center">설명</th></tr>
-  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service">4iren-AI-learning</a></td><td align="center">업데이트 예정</td></tr>
-  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service">4iren-AI-predict</a></td><td align="center">업데이트 예정</td></tr>
+  <tr><th align="center">Repository</th><th align="center">설명</th><th>세부기능</th></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service">4iren-AI-learning</a></td><td align="center">업데이트 예정</td><td><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/AI%E2%80%90Learning-%E2%80%90-%EC%84%B8%EB%B6%80%EA%B8%B0%EB%8A%A5">AI Learning 세부기능</a></td></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service">4iren-AI-predict</a></td><td align="center">업데이트 예정</td><td><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/AI-Predict-API-%E2%80%90-%EC%84%B8%EB%B6%80%EA%B8%B0%EB%8A%A5">AI Predict 세부기능</a></td></tr>
 </table>
 
 </div>
@@ -221,3 +225,4 @@
 - **단기 트렌드 예측 및 에너지 관리 트리거**: 선제적 환기 추천, 유휴 공간 자동 절전 제안
 - **리포트 및 이력 조회**: 통계 집계, 추천 이력/반응 조회
 - **조직 및 접근 권한 관리**: 강의실 구독 승인 워크플로우, 역할 기반 권한
+
