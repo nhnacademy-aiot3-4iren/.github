@@ -9,7 +9,9 @@
 
 <br/>
 
-<a href="https://4iren.site">🖥️ 홈페이지</a> &nbsp; | &nbsp; <a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/%EA%B8%B0%EC%88%A0-%EA%B8%B0%ED%9A%8D%EC%84%9C">📄 기술 기획서</a> &nbsp; | &nbsp; <a href="https://www.erdcloud.com/d/cMAWTm4FoZ56yLm6o">📚 ERD Cloud</a>
+<p align="center">
+  <a href="https://4iren.site">🖥️ 홈페이지</a> &nbsp; | &nbsp; <a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki">📄 Team Wiki</a> &nbsp; | &nbsp; <a href="https://www.erdcloud.com/d/cMAWTm4FoZ56yLm6o">📚 ERD Cloud</a>
+</p>
 
 <br/>
 
