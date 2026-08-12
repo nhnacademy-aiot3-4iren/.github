@@ -198,7 +198,7 @@
 
 <div>
   <br>
-    <img src="4iren-architecture.png" alt="4iren architecture" width="1000"/>
+    <img src="4iren-architecture_v2.png" alt="4iren architecture" width="1000"/>
 </div>
 
 > ⚠️ Environment API는 Core API로 명칭 변경됨 (2026-07 기준)
