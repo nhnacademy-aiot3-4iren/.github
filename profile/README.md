@@ -21,7 +21,7 @@
 ## 🚨 왜 4iren인가
 
 > 위험을 가장 먼저 감지하고 경보를 울리는 **사이렌(Siren)** 처럼,
-> **4iren**은 교육 공간의 공기질 이상과 에너지 낭비를 가장 먼저 감지해 알리고, 스스로 판단해 대응하는 AIoT 플랫폼입니다.
+> **4iren**은 교육 공간의 공기질 이상을 가장 먼저 감지해 알리고, 무엇을 해야 할지까지 설명해 주는 AIoT 플랫폼입니다.
 
 ### 😮‍💨 이런 문제, 익숙하지 않으신가요?
 
@@ -33,9 +33,9 @@
 
 ### 🎯 서비스 목표
 
-교육 시설에 설치된 IoT 센서를 실시간으로 관제하고, **규칙 기반 자동화**와 **LLM·ML 기반 지능형 판단**을 결합해 사람이 매번 개입하지 않아도 실내 환경이 최적 상태로 유지되도록 만드는 **플러그앤플레이(Plug & Play) AIoT 플랫폼**입니다.
+교육 시설에 설치된 IoT 센서 데이터를 수집·관제하고, **규칙 기반 자동화**와 **LLM·ML 기반 지능형 판단**을 결합해 사람이 매번 개입하지 않아도 실내 환경 상태를 파악하고 조치를 안내받을 수 있게 하는 AIoT 플랫폼입니다.
 
-> 센서·MQTT 연동만 마치면, 강의실마다 규칙을 새로 코딩할 필요 없이 머신러닝이 해당 공간의 물리적 특성에 맞춰 스스로 학습하고 최적화됩니다.
+> 센서·MQTT 연동을 마치면 강의실별로 임계치 규칙을 시각적으로 구성할 수 있고, 누적된 사용자 피드백을 야간 배치로 학습해 강의실별 선호 환경값을 보정합니다.
 
 **🏫 타겟 고객** — 여러 강의실·실습실을 운영하며 공기질·에너지 관리를 체계화하고 싶은 교육기관 (대학, 학원, 부트캠프 등)
 
@@ -43,10 +43,10 @@
 
 | 가치 | 설명 |
 |---|---|
-| ⚡ **실시간성** | 센서 패킷 인입부터 알림·브리핑 반영까지 저지연 처리 (MQTT → RabbitMQ → 비동기 파이프라인) |
-| 🧩 **자동화의 2단계 구조** | 사람이 정한 명시적 규칙(임계치·복합조건 룰 엔진)과, 상황을 스스로 해석해 선제적으로 판단하는 AI 예측·추천을 모두 제공 |
-| 🌦️ **맥락 있는 판단** | 실내 센서 데이터뿐 아니라 실시간 외부 날씨까지 결합해 "왜 이 조치가 필요한지"를 자연어로 설명 |
-| 🧠 **공간 도메인 적응** | 강의실마다 독립된 ML 모델이 물리적 특성과 이용 집단의 선호를 자동 학습 — 하드코딩 없이 공간별로 스스로 최적화 |
+| ⚡ **비동기 파이프라인** | 센서 패킷 인입부터 알림 발송까지 비동기 처리 (MQTT → RabbitMQ → 각 서비스). 실시간 스트리밍(SSE) API를 제공하며, 웹 화면은 조회 시점 기준 15분 평균을 표시 |
+| 🧩 **자동화의 2단계 구조** | 사람이 정한 명시적 규칙(임계치 기반 플로우 엔진)과, 상황을 해석해 자연어로 설명·추천하는 LLM 판단을 함께 제공 |
+| 🌦️ **맥락 있는 판단** | 실내 센서 데이터뿐 아니라 기상청 실황·예보까지 결합해 "왜 이 조치가 필요한지"를 자연어로 설명 |
+| 🧠 **피드백 학습** | 텔레그램으로 모인 사용자 만족도 피드백을 야간 배치로 학습해, 공통 모델 위에 강의실별 보정값(residual adapter)과 선호 환경 프로필을 갱신 |
 
 ---
 
@@ -105,7 +105,6 @@
   
   <h3>Databases & Message Brokers</h3>
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white">
   <img src="https://img.shields.io/badge/InfluxDB-22ADF6?style=for-the-badge&logo=influxdb&logoColor=white">
   <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white">
   <img src="https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white">
@@ -124,7 +123,9 @@
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white">
-  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white">
+  <img src="https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white">
+  <img src="https://img.shields.io/badge/ONNX_Runtime-005CED?style=for-the-badge&logo=onnx&logoColor=white">
+  <img src="https://img.shields.io/badge/MinIO-C72E49?style=for-the-badge&logo=minio&logoColor=white">
 </div>
 
 ---
@@ -171,6 +172,13 @@
   <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-account-api">4iren-account</a></td><td align="center">유저 CRUD</td><td><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/Account-%E2%80%90-%EC%84%B8%EB%B6%80%EA%B8%B0%EB%8A%A5">Account 세부기능</a></td></tr>
 </table>
 
+<h3>💳 결제(Payment)</h3>
+
+<table align="center">
+  <tr><th align="center">Repository</th><th align="center">설명</th><th>세부기능</th></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-payment-api">4iren-payment</a></td><td align="center">구독 결제 (Toss·Kakao Pay)</td><td><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/Payment-%E2%80%90-%EC%84%B8%EB%B6%80%EA%B8%B0%EB%8A%A5">Payment 세부기능</a></td></tr>
+</table>
+
 <h3>🔔 Notification</h3>
 
 <table align="center">
@@ -182,8 +190,7 @@
 
 <table align="center">
   <tr><th align="center">Repository</th><th align="center">설명</th><th>세부기능</th></tr>
-  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service">4iren-AI-learning</a></td><td align="center">업데이트 예정</td><td><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/AI%E2%80%90Learning-%E2%80%90-%EC%84%B8%EB%B6%80%EA%B8%B0%EB%8A%A5">AI Learning 세부기능</a></td></tr>
-  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-notification-service">4iren-AI-predict</a></td><td align="center">업데이트 예정</td><td><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/AI-Predict-API-%E2%80%90-%EC%84%B8%EB%B6%80%EA%B8%B0%EB%8A%A5">AI Predict 세부기능</a></td></tr>
+  <tr><td align="center"><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-machine-learning">4iren-AI-Learning</a></td><td align="center">피드백 기반 야간 모델 갱신 파이프라인</td><td><a href="https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/AI%E2%80%90Learning-%E2%80%90-%EC%84%B8%EB%B6%80%EA%B8%B0%EB%8A%A5">AI Learning 세부기능</a></td></tr>
 </table>
 
 </div>
@@ -212,25 +219,27 @@
 
 | 영역 | 요구사항 |
 |---|---|
-| 실시간 관제 | 강의실별 센서 데이터(온도·습도·CO₂) 실시간 조회 |
-| 실시간 관제 | 외부 날씨 연동 및 실내외 비교 뷰 제공 |
-| 웰컴 브리핑 | 도어 센서 최초 개방 감지 시, 밤새 축적된 공기질 + 당일 날씨 종합 브리핑 자동 발송 |
-| 정밀 재실 분석 | CO₂ 농도 기울기(상승/하강 속도)를 ML 피처로 활용한 재실·밀집도 추정 |
-| 공간 도메인 적응 | 강의실별 물리적 특성(환기 효율, 냉방 속도 등) 독립 학습 |
-| 집단 맞춤 학습 | 사용자 피드백 누적 학습으로 강의실별 최적 환경 지표 자동 도출 |
-| 룰 엔진 | 센서 임계치 기반 및 복합조건(다중 지표 조합) 자동화 룰 |
-| 룰 엔진 | 다중 룰 충돌 시 우선순위 기반 처리 |
-| 알림 | 관리자 대상 실시간 이상탐지·임계치 알림 (전용 봇) |
-| 알림 | 일반 사용자 대상 브리핑·추천·피드백 요청 (전용 봇) |
-| 자연어 질의응답 | "지금 환기해도 될까?" 등 실내외 데이터 종합 자연어 답변 |
-| 피드백 수집 | 인라인 키보드 + 자유 텍스트 피드백 수집, 환경 스냅샷과 결합해 학습 데이터로 적재 |
-| 단기 트렌드 예측 | 30분 후 CO₂·온도 예상치 및 임계치 도달 예상 시간 제공 |
-| 에너지 관리 | 공강 시간 등 빈 공간 지속 감지 시 기기 대기 모드 전환 권장 |
-| 리포트 | 시간별 센서 통계 집계, 주간/월간 환경 요약 리포트 |
-| 이력 조회 | LLM 추천 이력 및 사용자 수락/거절 반응 조회 |
-| 조직 관리 | 강의실 구독 요청 → 관리자 승인 워크플로우 |
-| 조직 관리 | 역할(관리자/일반 구성원)별 접근 권한 차등 |
-| 계정 | 로그인, JWT 기반 인증/인가 |
+| 센서 수집 | 건물별 MQTT 브로커 동적 등록, LoRaWAN(ChirpStack) 업링크 수집 및 InfluxDB 적재 |
+| 센서 관제 | 강의실별 센서 지표 조회 — 최신값 / 최근 15분 평균 / 임의 구간 시계열 |
+| 센서 관제 | 센서 지표 실시간 스트리밍 API 제공 (SSE, `Last-Event-ID` 기반 재생) |
+| 날씨 연동 | 기상청 초단기 실황·예보 조회, 강의실 위치 기반 지역 날씨 및 시간별 과거 날씨 재구성 |
+| 웰컴 브리핑 | 강의실 상세 화면 진입 시, 밤새 축적된 환경 데이터 + 당일 날씨 + ML 추천을 종합한 브리핑 생성 (오전 10시 이전 한정) |
+| 일일 요약 | 강의실별 실내 센서 데이터와 외부 날씨를 비교한 하루 요약 리포트 생성 |
+| 브리핑 정책 | 팀·강의실별 브리핑 조건(강수확률·풍속·습도 임계값) 설정 |
+| 피드백 학습 | 텔레그램 피드백을 야간 배치로 학습해 강의실별 보정값·선호 환경 프로필 갱신 후 모델 번들 배포 |
+| 기기 운전 추천 | 학습된 ONNX 모델로 냉난방기 가동 시간대·환기 시점을 추천해 브리핑 근거로 제공 |
+| 룰 엔진 | 강의실별 시각적 플로우(조건 노드 → 분기 → 알림 노드) 구성 및 활성/비활성 관리 |
+| 룰 엔진 | 요일·시간대 스케줄로 플로우 동작 구간 제한, 센서 구성에 맞는 템플릿 추천 |
+| 알림 | 관리자 대상 임계치 이탈 알림 (관리자 전용 봇, 발송 전용) |
+| 알림 | 긴급 알림 즉시 발송 / 비긴급 알림 3분 디바운스 묶음 발송 |
+| 자연어 질의응답 | "지금 환기해도 될까?" 등 도구 호출 기반 자연어 답변 (웹 챗봇 + 텔레그램 봇) |
+| 피드백 수집 | 자유 텍스트에서 온도·습도·공기질 3축 감정 점수 추출, 환경 스냅샷과 결합해 학습 데이터로 적재 |
+| 이력 조회 | 알림 발송 이력 조회(강의실·봇 종류·알림 유형·기간 필터), 기기 동작 이력 조회 |
+| 조직 관리 | 팀 / 건물 / 강의실 / 기기 / 센서 CRUD, 초대 코드 기반 팀 가입 |
+| 조직 관리 | 강의실 구독(셀프 등록) 및 구독별 알림 수신 여부 설정 |
+| 조직 관리 | 역할(OWNER / ADMIN / NORMAL)별 접근 권한 차등 |
+| 계정 | 로그인, JWT 기반 인증/인가, 비밀번호 초기화 메일 발송 |
+| 결제 | 팀 Owner 등급 월간·연간 구독, 토스페이·카카오페이 빌링키 자동결제, 구독 취소 |
 
 </details>
 
@@ -239,16 +248,18 @@
 
 | 구분 | 요구사항 |
 |---|---|
-| 실시간성 | 웹훅/이벤트 수신은 즉시 응답, 실제 처리(LLM 호출 등)는 비동기로 분리 |
-| 장애 격리 | 외부 서비스(LLM 등) 장애가 알림·발송 기능 전체를 막지 않음 (서킷브레이커/폴백) |
+| 실시간성 | 텔레그램 웹훅 수신은 즉시 200 응답 후 RabbitMQ로 비동기 처리 (텔레그램 재전송 방지) |
+| 장애 격리 | 알림 서비스는 Recommendation/Core 호출에 Resilience4j 서킷브레이커·폴백 적용, LLM 장애 시 안내 문구로 대체 응답 |
+| 장애 격리 | 브리핑 생성 실패 시 강의실 상세 화면은 브리핑 영역 없이 정상 렌더링 |
 | 서비스 독립성 | 서비스별 독립 DB/스키마 사용, 타 서비스 DB 직접 접근 금지 (Database-per-Service) |
-| 확장성 | 새로운 강의실 추가 시 스키마·코드 변경 없이 모델이 자동 적응 (플러그앤플레이) |
-| 확장성 | 센서 항목 추가 시에도 핵심 파이프라인 변경 최소화 |
-| 비용 효율 | LLM 호출은 목적에 따라 경량 모델(의도 분류)과 고성능 모델(답변 합성)로 분리 |
-| 성능 | 반복 조회되는 표시용 참조 데이터는 캐시로 DB/API 호출 병목 방지 |
-| 보안 | 봇 차단·계정 비활성화 시 알림 대상에서 자동 제외 |
-| 데이터 무결성 | 동일 스키마 내 테이블 간 참조 무결성을 실제 제약조건(FK)으로 보장 |
-| 데이터 일관성 | 이벤트 기반 동기화 데이터는 최종적 일관성을 전제, 순서 역전 시 stale 이벤트 방어 로직 적용 |
+| 확장성 | 센서·강의실 추가 시 파이프라인 코드 변경 없이 수집·검증·알림까지 동작 (단, ML 학습 대상 공간은 현재 코드에 정의된 목록에 한정) |
+| 성능 | 센서 요약 조회는 Caffeine(L1) + Redis(L2) 계층 캐시, 브리핑·일일 요약·날씨는 Redis TTL 캐시 |
+| 신뢰성 | 이상치 알림은 1시간 창 누적 횟수 기준 + 2시간 쿨다운, 룰 알림은 Redis 락 기반 중복 발송 차단 |
+| 신뢰성 | 처리 실패 메시지는 DLQ로 격리 후 Elasticsearch에 원문·스택트레이스 보관 |
+| 보안 | 텔레그램 봇 차단 시 알림 대상에서 자동 제외, 구독자 조회 시 비활성 계정 필터링 |
+| 보안 | 게이트웨이가 주입한 `X-USER-ID`/`X-USER-ROLE` 헤더 기반 역할 검증, 본인 리소스만 조회·수정 허용 |
+| 데이터 무결성 | 엔티티 간 참조를 명시적 FK 제약으로 선언 (`@JoinColumn(foreignKey=...)`) |
+| 데이터 일관성 | 이벤트 기반 동기화 데이터는 최종적 일관성 전제, 역할 변경·관리자 생성 이벤트는 DLQ 재처리 경로 보유 |
 | 오버엔지니어링 회피 | 실제 필요성이 확인되기 전까지 불필요한 스키마 확장·과도한 동기화 인프라 도입 지양 |
 
 </details>
@@ -257,14 +268,15 @@
 
 ## 제공 기능
 
-- **실시간 환경 관제**: 강의실별 센서 데이터 실시간 조회, 외부 날씨 비교 뷰
-- **지능형 웰컴 브리핑**: 도어 센서 트리거 기반 맥락 인지형 자동 브리핑
-- **정밀 재실·밀집도 분석**: 시계열 기울기 기반 ML 추정
-- **공간 도메인 적응 학습**: 강의실별 독립 모델을 통한 자동 환경 최적화
-- **룰 기반 자동화**: 임계치/복합조건 룰, 우선순위 관리
-- **텔레그램 알림 에이전트**: 관리자용(발송 전용)/사용자용(양방향 에이전트) 이원화 봇
-- **자연어 질의응답 및 피드백 루프**: 상황 인지형 답변 + 학습용 피드백 수집
-- **단기 트렌드 예측 및 에너지 관리 트리거**: 선제적 환기 추천, 유휴 공간 자동 절전 제안
-- **리포트 및 이력 조회**: 통계 집계, 추천 이력/반응 조회
-- **조직 및 접근 권한 관리**: 강의실 구독 승인 워크플로우, 역할 기반 권한
+- **센서 수집·관제**: MQTT 브로커 동적 등록, 최신값/15분 평균/구간 시계열 조회, SSE 실시간 스트리밍 API
+- **지능형 웰컴 브리핑**: 강의실 상세 진입 시 밤새 환경 데이터·당일 날씨·ML 추천을 종합한 브리핑 생성 (오전 10시 이전)
+- **일일 환경 요약**: 실내 센서와 외부 날씨를 비교한 하루 요약 리포트
+- **피드백 학습 파이프라인**: 텔레그램 피드백을 야간 배치로 학습해 강의실별 보정값·선호 프로필 갱신 후 모델 번들 배포
+- **기기 운전 추천**: 학습된 ONNX 모델 기반 냉난방기 가동 시간대·환기 시점 추천
+- **룰 기반 자동화**: 강의실별 시각적 플로우 구성, 요일·시간대 스케줄, 센서 구성 기반 템플릿 추천
+- **텔레그램 알림**: 관리자용(발송 전용)/사용자용(양방향 에이전트) 이원화 봇, 긴급 즉시 발송 + 비긴급 3분 묶음 발송
+- **자연어 질의응답 및 피드백 루프**: 도구 호출 기반 답변 + 3축 감정 점수 피드백 수집
+- **이력 조회**: 알림 발송 이력(다중 필터), 기기 동작 이력
+- **조직 및 접근 권한 관리**: 팀/건물/강의실/기기/센서 CRUD, 초대 코드 가입, 역할 기반 권한
+- **구독 결제**: 팀 Owner 등급 월간/연간 구독, 토스페이·카카오페이 빌링키 등록 및 자동결제
 
