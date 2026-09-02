@@ -203,12 +203,21 @@
 
 ## Architecture Overview
 
-<div>
+<div align="center">
   <br>
-    <img src="4iren-architecture_v3.png" alt="4iren architecture" width="1000"/>
+    <img src="4iren-architecture-simple.png" alt="4iren architecture" width="1000"/>
 </div>
 
 > ⚠️ Environment API는 Core API로 명칭 변경됨 (2026-07 기준)
+
+### 머신러닝 파이프라인
+
+강의실 상세 화면 진입 시 만들어지는 웰컴 브리핑이, 매일 새벽 도는 학습 배치와 어떻게 이어지는지는 아래 흐름을 참고하세요. 자세한 내용은 [AI Learning 세부기능](https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/AI%E2%80%90Learning-%E2%80%90-%EC%84%B8%EB%B6%80%EA%B8%B0%EB%8A%A5)에 있습니다.
+
+<div align="center">
+  <br>
+    <img src="4iren-machineLearningLoof.png" alt="4iren machine learning pipeline" width="900"/>
+</div>
 
 ---
 
