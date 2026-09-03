@@ -131,7 +131,6 @@
 ---
 
 ## 📂 Repositories
-<p align="center"><i>⚠️ 추후 다시 업데이트 예정입니다.</i></p>
 
 <div align="center">
 
@@ -208,7 +207,6 @@
     <img src="4iren-architecture-simple.png" alt="4iren architecture" width="1000"/>
 </div>
 
-> ⚠️ Environment API는 Core API로 명칭 변경됨 (2026-07 기준)
 
 ### 머신러닝 파이프라인
 
@@ -217,6 +215,15 @@
 <div align="center">
   <br>
     <img src="4iren-machineLearningLoof.png" alt="4iren machine learning pipeline" width="900"/>
+</div>
+
+### 알림 파이프라인
+
+Processing·Rule Engine이 발행한 이벤트가 텔레그램으로 발송되기까지의 흐름입니다. 긴급/비긴급 경로가 나뉘고, 실패한 메시지는 별도로 Grafana를 통해 운영팀에게 알림이 갑니다. 자세한 내용은 [Notification API 세부기능](https://github.com/nhnacademy-aiot3-4iren/4iren-wiki/wiki/Notification-API-%E2%80%90-%EC%84%B8%EB%B6%80%EA%B8%B0%EB%8A%A5)에 있습니다.
+
+<div align="center">
+  <br>
+    <img src="4iren-notification-pipline.png" alt="4iren notification pipeline" width="1000"/>
 </div>
 
 ---
