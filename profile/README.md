@@ -232,7 +232,7 @@ Processing·Rule Engine이 발행한 이벤트가 텔레그램으로 발송되�
 
 <div align="center">
   <br>
-    <img src="4iren-infra-architecture.png" alt="4iren notification pipeline" width="1000"/>
+    <img src="4iren-infra-architecture_V2.png" alt="4iren notification pipeline" width="1000"/>
 </div>
 
 ---
