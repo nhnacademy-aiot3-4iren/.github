@@ -226,6 +226,15 @@ Processing·Rule Engine이 발행한 이벤트가 텔레그램으로 발송되�
     <img src="4iren-notification-pipline.png" alt="4iren notification pipeline" width="1000"/>
 </div>
 
+### CI/CD 파이프라인
+
+개발자의 코드 푸시(Push)부터 운영 서버에 무중단으로 배포되기까지의 전체 CI/CD 자동화 흐름입니다. PR 단계에서 SonarQube와 JaCoCo를 통해 코드 품질을 엄격하게 검증하며, 메인 브랜치 병합 시 헬스체크 기반의 롤링 업데이트로 서비스 중단 없이 안전하게 배포됩니다. 파이프라인의 모든 성공/실패 결과는 Telegram 봇을 통해 즉각적으로 팀에 공유됩니다.
+
+<div align="center">
+  <br>
+    <img src="4iren-infra-architecture.png" alt="4iren notification pipeline" width="1000"/>
+</div>
+
 ---
 
 ## 요구사항
