@@ -204,7 +204,7 @@
 
 <div align="center">
   <br>
-    <img src="4iren_architecture_v4.png" alt="4iren architecture" width="1000"/>
+    <img src="4iren_architecture_v5.png" alt="4iren architecture" width="1000"/>
 </div>
 
 
